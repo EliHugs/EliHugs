@@ -6,7 +6,7 @@ const Home: React.FC = () => {
         <div className="content-box">
             <h1>Welcome to my Site!</h1>
             <p>
-                I am a web developer with a passion for creating dynamic web applications. I specialize in front-end technologies like React and Angular, but I also have experience with back-end technologies like Node.js and Express.
+           I am a recent graduate of Appalachian State University with a Bachelor of Science in Computer Science, complemented by an Associate of Science in Business Administration. Below you can find some of my most recent projects where I combine strong technical skills in programming with a creative and solution-oriented approach to problem-solving.
             </p>
             <ProjectShowcase maxProjects={3} />
         </div>

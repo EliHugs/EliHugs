@@ -5,7 +5,6 @@ import ProjectShowcase from '../components/ProjectShowcase'; // Adjust the path 
 const Projects: React.FC = () => {
     return (
         <div className="content-box">
-            <h1>Projects Page</h1>
             <ProjectShowcase />
         </div>
     );

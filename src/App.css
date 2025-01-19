@@ -1,20 +1,155 @@
+/* General styles */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #8D98A7; /* Updated background color */
+    color: var(--dun);
 }
 
 .App {
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.App-header {
-    background-color: #282c34;
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+    background-color: #8D98A7; /* Updated background color */
+}
+
+.content-box {
+    background-color: #DCCCBB; /* Updated background color */
+    padding: 20px; /* Adjust padding to fit content */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 95%; /* Adjust max-width to fill more of the screen */
+    width: 100%;
+    height: 90vh; /* Adjust height to fill more of the screen */
+    overflow: auto; /* Add overflow to handle content overflow */
+}
+
+.project-showcase {
+    margin-top: 20px;
+}
+
+.project-showcase.project-item:hover {
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    background-color: aliceblue;
+    color: black;
+}
+
+
+.project-showcase h2 {
+    margin-bottom: 10px;
+}
+
+.project-showcase ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between columns */
+}
+
+.project-showcase .project-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+}
+
+.project-showcase .project-item:hover {
+    transform: scale(1.05); /* Scale up the item on hover */
+}
+
+.project-showcase .project-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.project-showcase .project-item h3 {
+    margin: 0 0 5px 0;
+}
+
+.project-showcase .project-item p {
+    margin: 0;
+}
+
+.project-description {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.05); /* Slightly shaded background */
+    padding: 10px; /* Add padding for better readability */
+    border-radius: 4px; /* Add border radius for rounded corners */
+}
+
+/* Header styles */
+header {
+    background-color: #646E78;
     padding: 20px;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
-.App-link {
-    color: #61dafb;
+header h1 {
+    margin: 0;
+    margin-right: 20px;
+}
+
+header nav {
+    display: flex;
+    gap: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background-color: #646E78;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social-media {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-media img {
+    width: 24px;
+    height: 24px;
 }
